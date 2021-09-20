@@ -1,0 +1,20 @@
+﻿<Window x:Class="KoikatsuCharaExtractor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KoikatsuCharaExtractor"
+        mc:Ignorable="d"
+        Title="KoikatuCharaExtractor" SizeToContent="WidthAndHeight">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" MinHeight="40" Drop="Input_Drop" AllowDrop="True">
+            <TextBlock Text="Input file: " MinWidth="100" TextAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox x:Name="InputFileName" Width="300" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" MinHeight="40" Drop="Output_Drop" AllowDrop="True">
+            <TextBlock Text="Output folder: " MinWidth="100" TextAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox x:Name="OutPutFileName" Width="300" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Button Content="Go" Margin="4" Click="Button_Click"/>
+    </StackPanel>
+</Window>
